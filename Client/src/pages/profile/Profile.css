@@ -1,0 +1,51 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.listings-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 11rem;
+    justify-items: center;
+    
+  }
+  
+h1 {
+    margin: 80px 150px 0 ;
+}
+h2 {
+    margin: 80px 150px 50px ;
+    background-color: transparent;
+   
+}
+
+.profile-create {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile-create a{
+    display: flex;
+    gap: 5px;
+    margin: 80px 150px 0 ;
+    padding: 10px;
+    background-color: #0F4C75;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+
+}
+.profile-create a:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.add {
+    color: red
+}
+
+.bookings-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}

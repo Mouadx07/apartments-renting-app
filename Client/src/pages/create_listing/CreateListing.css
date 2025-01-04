@@ -1,0 +1,197 @@
+/* General reset and box-sizing */
+
+  
+  /* Body styling */
+
+  
+  /* Container for the form */
+  .listing-form {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  /* Heading styling */
+  h1 {
+    font-size: 2rem;
+    
+    
+    margin-bottom: 1.5rem;
+    color: #444;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 10rem;
+    width: 60rem;
+    
+  }
+  
+  /* Input and select styling */
+  input[type="file"]{
+     display: none; 
+
+  }
+
+  
+  .box .upload-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .uploaded-image img {
+    height: 15rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border-radius: 0%;
+    cursor: pointer;
+  }
+  .upload{
+    border: 2px dashed #0F4C75;
+    height: 15rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+  }
+  input[type="number"],
+  input[type="text"],
+  select {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+  }
+  #create-btn{
+    display: flex;
+    gap: 5px;
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+    background-color: #0F4C75;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Image preview styling */
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: block;
+  }
+  
+  /* Label styling */
+  label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  /* Add some spacing and visual effects for select dropdown */
+  select {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  select:focus {
+    border-color: #0056b3;
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #0056b3;
+    outline: none;
+  }
+  
+  @media (max-width: 768px) {
+    div {
+      padding: 1rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    input[type="file"],
+    input[type="number"],
+    input[type="text"],
+    select {
+      padding: 0.5rem;
+    }
+  
+    button {
+      font-size: 1rem;
+      padding: 0.8rem;
+    }
+  }
+
+
+.edit-image{
+  position: relative;
+  
+}
+.edit-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px; /* Size of the icon */
+  color: white; /* Icon color */
+  z-index: 2; /* Makes sure the icon is above the overlay */
+ 
+}
+
+.image {
+  display: block; 
+  width: 100%;
+  height: auto; 
+  filter: brightness(0.5);
+}

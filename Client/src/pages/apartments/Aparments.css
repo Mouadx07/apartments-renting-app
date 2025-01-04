@@ -1,0 +1,16 @@
+.listings-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+  
+
+
+@media (max-width: 600px) {
+    .listings-container {
+      grid-template-columns: 1fr; 
+    }
+  }
+
