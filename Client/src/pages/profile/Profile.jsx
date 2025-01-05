@@ -51,12 +51,12 @@ const Profile = () => {
         
         <h2>Your Listings</h2>
         <div className='listings-container'>
-        {listings.map((listing, i) => <Listing key={i} img={listing.image} renter={user.name} price={listing.price} available={available(listing)?'Available':'Not Available'} address={listing.address} id={listing._id} onClick={() => {}} onDelete={handleDelete}/>)}
+        {listings&&listings.map((listing, i) => <Listing key={i} img={listing.image} renter={user.name} price={listing.price} available={available(listing)?'Available':'Not Available'} address={listing.address} id={listing._id} onClick={() => {}} onDelete={handleDelete}/>)}
         
         </div>
         <h2>Your Bookings History</h2>
         <div className='bookings-container'>
-        {bookings.map(booking=><Booking nights={booking.nights} start={booking.starts} end={booking.ends} img={booking.apartment.image} price={booking.apartment.price} address={booking.apartment.address}/>)}        
+        {bookings&&bookings.map(booking=><Booking nights={booking.nights} start={booking.starts} end={booking.ends} img={booking.apartment.image} price={booking.apartment.price} address={booking.apartment.address}/>)}        
         </div>
     </div>
     :<div></div>}

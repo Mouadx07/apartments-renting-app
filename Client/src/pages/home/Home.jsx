@@ -7,7 +7,7 @@ const Home = () => {
   const [listings, setLisitngs] = useState([])
   const [loading, setLoading] = useState(true)
   useEffect(()=>{
-    getAllApartments().then(data=>{setLisitngs(data.apartments)});
+    getAllApartments().then(data=>{setLisitngs(data.apartments.slice(0, 3))});
   }, [])
   return (
     <div className="home">
@@ -23,7 +23,7 @@ const Home = () => {
       <section className="featured-listings">
         <h2>Featured Listings</h2>
         <div className="listings-grid">
-        {listings.map((listing, i)=><Listing key={i} img={listing.image} renter={listing.user.name} price={listing.price} available={''} address={listing.address}/>)}
+        {listings&&listings.map((listing, i)=><Listing key={i} img={listing.image} renter={listing.user.name} price={listing.price} available={''} address={listing.address}/>)}
         </div>
       </section>
 

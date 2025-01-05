@@ -56,7 +56,7 @@ const Apartments = () => {
     <h2>Discover Apartments </h2>
     <div className="listings-container">
      
-      {listings.map((listing, i)=><Listing key={i} img={listing.image} renter={listing.user.name} price={listing.price} available={available(listing)?'Available':'Not Available'} address={listing.address} onClick={() => handleCardClick(listing)}/>)}
+      {listings&&listings.map((listing, i)=><Listing key={i} img={listing.image} renter={listing.user.name} price={listing.price} available={available(listing)?'Available':'Not Available'} address={listing.address} onClick={() => handleCardClick(listing)}/>)}
       
       
 
