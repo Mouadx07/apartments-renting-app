@@ -30,7 +30,7 @@ function Listing({img, renter, price, address, available, onClick, id=false, onD
           <div className='listing-info'>
               <h3 className='listing-title'>{address}</h3>
               <div className='listing-desc'>
-                  <p id="renter">renter: {renter}</p>
+                  <p id="renter">Owner: {renter}</p>
                   <p>{available}</p>
               </div>
               
